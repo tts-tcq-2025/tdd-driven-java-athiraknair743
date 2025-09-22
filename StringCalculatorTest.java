@@ -4,9 +4,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class StringCalculatorTest {
 
     @Test
-    void shouldReturnZeroForEmptyString() {
-        StringCalculator calculator = new StringCalculator();
-        assertEquals(0, calculator.add(""));
+    void shouldReturnSumOfTwoCommaSeparatedNumbers() {
+    StringCalculator calculator = new StringCalculator();
+    assertEquals(3, calculator.add("1,2"));
     }
 }
 
